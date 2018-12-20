@@ -1,0 +1,53 @@
+<!-- File voor de custom actionbar die boven elke view zichtbaar is-->
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#062966"
+    android:layout_alignParentBottom="true"
+    >
+
+<!-- Menubutton aan de linkerkant van de actionbar -->
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:src="@drawable/menu_buttong_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="#062966"
+         />
+<!--Winkelmand aan de rechterkant van de actionbar -->
+    <ImageButton
+        android:id="@+id/btn_left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp"
+        android:background="#062966"
+        android:src="@drawable/shopping_bag" />
+
+<!-- Deze view zorgt voor de tekst in het midden van de actionbar -->
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_toStartOf="@+id/btn_left"
+        android:layout_toLeftOf="@+id/btn_left"
+        android:layout_toEndOf="@+id/btn_home"
+        android:layout_toRightOf="@+id/btn_home"
+        android:gravity="center"
+        android:text="Yurly"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+
+
+</RelativeLayout>
